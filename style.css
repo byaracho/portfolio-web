@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* FONT SIZE */
+    --H1-FONT-SIZE: 3.5rem;
+    --H2-FONT-SIZE: 3rem;
+    --H3-FONT-SIZE: 1.875rem;
+    --H4-FONT-SIZE: 1.5rem;
+    --H5-FONT-SIZE: 1.25rem;
+    --BODY-FONT-SIZE: 1.125rem;
+    --CAPTION-FONT-SIZE: 1rem;
+    --NAV-LINK-FONT-SIZE: 0.875rem;
+
+    /* */
+    --FF: Poppins, sans-serif;
+
+    /* COLOR */
+    --BLACK-COLOR: #2A2A28;
+    --DARK-GREY-COLOR: #444444;
+    --WHITE-COLOR: #FFFFFF;
+    --BG-COLOR: #F3F3F2;
+    --LIGHT-GREY-COLOR: #EBEBEB;
+    --GREY-COLOR: #AFAFAC;
+
+    /* SIZE */
+    --HEADER-FOOTER-WIDTH: 1100px;
+    --MAIN-CONTAINER-WIDTH: 1200px;
+    
+    --HERO-SECTION-PADDING-TOP: 130px;
+    --HERO-SECTION-PADDING-BOTTOM: 150px;
+    --SUB-SECTION-1-PADDING-TOP: 100px;
+    --SUB-SECTION-1-PADDING-BOTTOM: 100px;
+
+    /* IMG */   
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
