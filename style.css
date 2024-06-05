@@ -2,11 +2,12 @@
 
 :root {
   --max-width: 1000px;
-  --max-wide-width: 1100px;
+  --max-wide-width: 1132px;
 
   --clr-white: #fff;
   --clr-light-grey: #fbfbfb;
   --clr-grey: #F3F3F3;
+  --clr-light-dark-grey: #bebebc;
   --clr-dark-grey: #444;
   --clr-black: #2a2a2a;
 
@@ -28,7 +29,8 @@
 
 body {
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased
+  -webkit-font-smoothing: antialiased;
+  font-family: Poppins;
 }
 
 :where(img, picture, video, canvas, svg) {
@@ -48,7 +50,7 @@ body {
   isolation: isolate
 }
 
-/*  */
+/* style */
 body {
   background-color: var(--clr-grey);
   font-family: system-ui, sans-serif;
@@ -69,6 +71,7 @@ h1, h2, h3 {
   padding: 0 1rem;
   margin: 0 auto;
 }
+
 .wrapper {
   max-width: var(--max-width);
 }
@@ -87,10 +90,17 @@ header {
 .hero {
   background-color: var(--clr-white);
   padding: 130px 0 150px;
+  border-radius: 0 0 3rem 3rem;
 }
 
 .graduation-project {
   background-color: var(--clr-black);
+}
+
+.graduation-project div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cta-section {
@@ -118,7 +128,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 0;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .header nav {
@@ -126,6 +137,7 @@ footer {
   align-items: center;
   gap: 2rem;
 }
+
 .header nav a {
   font-size: 14px;
 }
@@ -165,7 +177,7 @@ footer {
 .social-links a {
   width: 40px;
   aspect-ratio: 1;
-  border: 1px solid var(--clr-dark-grey);
+  border: 1px solid var(--clr-light-dark-grey);
   border-radius: 1000px;
   display: flex;
   justify-content: center;
@@ -175,10 +187,6 @@ footer {
 .hero .social-links {
   margin-bottom: 60px;
 }
-
-/* footer .social-links {
-  
-} */
 
 .apps {
   display: flex;
@@ -194,6 +202,16 @@ section h2 + p {
   color: #4C4D59;
   margin-top: 1.25rem;
   margin-bottom: 3.75rem;
+}
+
+.graduation-project p {
+  color: var(--clr-white);
+  margin-bottom: 0;
+}
+
+.cta-section p {
+  color: var(--clr-white);
+  margin-bottom: 1.5rem;
 }
 
 .app-images {
@@ -255,8 +273,6 @@ section h2 + p {
   flex-direction: column;
 }
 
-
-
 .graduation-project div {
   padding: 5rem 100px;
   order: 2;
@@ -265,9 +281,30 @@ section h2 + p {
 .graduation-project img {
   max-height: 520px;
   object-fit: cover;
-  
 }
 
+/* 구체성점수 010 011 목표로 */
+.selected-projects section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+/* flex 안에서는 width로 절대 크기를 정해도 제대로 적용되지 않을 수 있음 */
+.selected-projects article {
+  /* min-width: 450px; */
+  /* min-width: 494px; */
+  flex-basis: 50%;
+}
+
+@media (min-width: 600px) {
+  .selected-projects section {
+    flex-direction: row;
+  }
+}
+
+/* Q: header에 패딩이 사라짐 */
 @media (min-width: 810px) {
   .graduation-project {
     flex-direction: row;
@@ -279,4 +316,56 @@ section h2 + p {
     padding: 5rem 100px;
     order: -1;
   }
+}
+
+/* wide-wrapper max-width를 바꾸는 것으로 해결 */
+/* @media (min-width: 1100px) {
+  .wide-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
+} */
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  gap: 4rem;
+}
+
+.main-nav > a {
+  font-weight: bold;
+}
+
+.footer nav a {
+  font-size: 14px;
+  padding: 0 1rem 0 0;
+  color: var(--clr-light-dark-grey);
+}
+
+.footer nav a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-links {
+  filter: invert(99%) sepia(67%) saturate(0%) hue-rotate(119deg) brightness(113%) contrast(100%);
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 0.5px solid var(--clr-light-dark-grey);
+  margin: 2rem 0;
+}
+
+.copyright p {
+  padding: 1rem 0 0;
+  font-size: 14px;
+  text-align: center;
+  color: var(--clr-light-dark-grey);
 }

@@ -10,14 +10,16 @@
   </head>
   <body>
     <header>
-      <div class="wide-wrapper header">
-        <a href="/">Callum Hayes</a>
-        <nav>
-          <a href="/">Projects</a>
-          <a href="/">Resume</a>
-          <a href="/">About me</a>
-          <a href="/" class="cta">Book a call</a>
-        </nav>
+      <div class="wide-wrapper">
+        <div class="header main-nav">
+          <a href="/">Callum Hayes</a>
+          <nav>
+            <a href="/">Projects</a>
+            <a href="/">Resume</a>
+            <a href="/">About me</a>
+            <a href="/" class="cta">Book a call</a>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -52,20 +54,19 @@
           <h2>Selected projects</h2>
           <p>Explore my selected projects, showcasing my dedication to innovative and heartfelt design.</p>
         </div>
-        <div class="projects">
-        <article>
-            <img src="/public/project-1.png" alt="">
-            <h3>Redesign project: fitness tracker App Revamp</h3>
-            <p>Elevating the user experience of a renowned fitness tracker app through a strategic.</p>
-        </article>
-        <article>
-            <img src="/public/project-2.png" alt="">
-            <h3>Internship project: social dining app design</h3>
-            <p>Designing a mobile app to connect food enthusiasts through shared dining experiences, from concept
-            to prototype.</p>
-        </article>
-        </div>
-        </div>
+        <section class="wrapper selected-projects-items">
+            <article>
+                <img src="/public/project-1.png" alt="">
+                <h3>Redesign project: fitness tracker App Revamp</h3>
+                <p>Elevating the user experience of a renowned fitness tracker app through a strategic.</p>
+            </article>
+            <article>
+                <img src="/public/project-2.png" alt="">
+                <h3>Internship project: social dining app design</h3>
+                <p>Designing a mobile app to connect food enthusiasts through shared dining experiences, from concept
+                to prototype.</p>
+            </article>
+        </section>
       </section>
 
       <section class="graduation-project">
@@ -73,7 +74,6 @@
           <h2>My graduation project</h2>
           <p>Revolutionizing the educational ecosystem with a mobile app designed to enhance interactive learning and peer collaboration.</p>
         </div>
-
         <img src="/public/graduation-project.jpg" alt="">
       </section>
       
@@ -124,22 +124,26 @@
 
     <footer>
       <div class="wide-wrapper">
-        <nav>
-          <a href="/">Callum Hayes</a>
-          <a href="/">Projects</a>
-          <a href="/">Resume</a>
-          <a href="/">About me</a>
-        </nav>
-
-        <div class="social-links">
-          <a href="/"><img src="/public/Dribble.svg" alt="."></a>
-          <a href="/"><img src="/public/Linkedin.svg" alt="."></a>
-          <a href="/"><img src="/public/Behance.svg" alt="."></a>
-          <a href="/"><img src="/public/X.svg" alt="."></a>
+        <div class="footer">
+          <div class="main-nav">
+            <a href="/">Callum Hayes</a>
+            <nav>
+              <a href="/">Projects</a>
+              <a href="/">Resume</a>
+              <a href="/">About me</a>
+            </nav>
+          </div>
+          <div class="social-links">
+            <a href="/"><img src="/public/Dribble.svg" alt="."></a>
+            <a href="/"><img src="/public/Linkedin.svg" alt="."></a>
+            <a href="/"><img src="/public/Behance.svg" alt="."></a>
+            <a href="/"><img src="/public/X.svg" alt="."></a>
+          </div>
         </div>
-
         <hr>
-        <p>Copyright 2024 by Callum Hayes</p>
+        <div class="copyright">
+          <p>Copyright 2024 by Callum Hayes</p>
+        </div>
       </div>
     </footer>
   </body>
