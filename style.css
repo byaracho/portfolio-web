@@ -19,7 +19,9 @@
 }
 
 /* reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box
 }
 
@@ -62,7 +64,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: normal;
 }
 
@@ -75,11 +79,12 @@ h1, h2, h3 {
 .wrapper {
   max-width: var(--max-width);
 }
+
 .wide-wrapper {
   max-width: var(--max-wide-width);
 }
 
-main > section {
+main>section {
   padding: 5rem 0;
 }
 
@@ -141,6 +146,7 @@ footer {
 .header nav a {
   font-size: 14px;
 }
+
 .header nav a:hover {
   text-decoration: underline;
 }
@@ -198,7 +204,7 @@ section h2 {
   line-height: 1;
 }
 
-section h2 + p {
+section h2+p {
   color: #4C4D59;
   margin-top: 1.25rem;
   margin-bottom: 3.75rem;
@@ -309,9 +315,11 @@ section h2 + p {
   .graduation-project {
     flex-direction: row;
   }
-  .graduation-project > * {
+
+  .graduation-project>* {
     width: 50%;
   }
+
   .graduation-project div {
     padding: 5rem 100px;
     order: -1;
@@ -338,7 +346,7 @@ section h2 + p {
   gap: 4rem;
 }
 
-.main-nav > a {
+.main-nav>a {
   font-weight: bold;
 }
 
