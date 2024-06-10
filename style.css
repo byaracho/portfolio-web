@@ -52,7 +52,7 @@ body {
   isolation: isolate
 }
 
-/* style */
+/* ----------------- common ----------------- */
 body {
   background-color: var(--clr-grey);
   font-family: system-ui, sans-serif;
@@ -98,36 +98,6 @@ header {
   border-radius: 0 0 3rem 3rem;
 }
 
-.graduation-project {
-  background-color: var(--clr-black);
-}
-
-.graduation-project div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cta-section {
-  background-color: var(--clr-dark-grey);
-}
-
-footer {
-  background-color: var(--clr-black);
-  padding: 50px 0 80px;
-}
-
-footer a,
-footer p {
-  color: var(--clr-grey);
-}
-
-.graduation-project,
-.cta-section,
-footer {
-  color: var(--clr-white)
-}
-
 /* header */
 .header {
   display: flex;
@@ -168,7 +138,82 @@ footer {
   font-size: 14px;
 }
 
-/* sections */
+.cta-section {
+  background-color: var(--clr-dark-grey);
+}
+
+/* footer */
+footer {
+  background-color: var(--clr-black);
+  padding: 50px 0 80px;
+}
+
+footer a,
+footer p {
+  color: var(--clr-grey);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  gap: 4rem;
+}
+
+.main-nav>a {
+  font-weight: bold;
+}
+
+.footer nav a {
+  font-size: 14px;
+  padding: 0 1rem 0 0;
+  color: var(--clr-light-dark-grey);
+}
+
+.footer nav a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-links {
+  filter: invert(99%) sepia(67%) saturate(0%) hue-rotate(119deg) brightness(113%) contrast(100%);
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 0.5px solid var(--clr-light-dark-grey);
+  margin: 2rem 0;
+}
+
+.copyright p {
+  padding: 1rem 0 0;
+  font-size: 14px;
+  text-align: center;
+  color: var(--clr-light-dark-grey);
+}
+
+
+/* ----------------- index.html ----------------- */
+.graduation-project {
+  background-color: var(--clr-black);
+}
+
+.graduation-project div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.graduation-project,
+.cta-section,
+footer {
+  color: var(--clr-white)
+}
+
 .hero h1 {
   font-size: var(--size-heading-1);
   margin: 40px 0;
@@ -310,7 +355,6 @@ section h2+p {
   }
 }
 
-/* Q: header에 패딩이 사라짐 */
 @media (min-width: 810px) {
   .graduation-project {
     flex-direction: row;
@@ -333,47 +377,3 @@ section h2+p {
     padding-left: 0;
   }
 } */
-
-/* footer */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-nav {
-  display: flex;
-  gap: 4rem;
-}
-
-.main-nav>a {
-  font-weight: bold;
-}
-
-.footer nav a {
-  font-size: 14px;
-  padding: 0 1rem 0 0;
-  color: var(--clr-light-dark-grey);
-}
-
-.footer nav a:hover {
-  text-decoration: underline;
-}
-
-.footer .social-links {
-  filter: invert(99%) sepia(67%) saturate(0%) hue-rotate(119deg) brightness(113%) contrast(100%);
-}
-
-hr {
-  border: 0;
-  height: 0;
-  border-top: 0.5px solid var(--clr-light-dark-grey);
-  margin: 2rem 0;
-}
-
-.copyright p {
-  padding: 1rem 0 0;
-  font-size: 14px;
-  text-align: center;
-  color: var(--clr-light-dark-grey);
-}
