@@ -418,7 +418,9 @@ section h2+article {
   border-radius: 0 0 3rem 3rem;
 }
 
-.project-detail p {
+.project-detail p,
+.resume-detail p,
+.resume-detail ul {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -495,5 +497,19 @@ section h2+article {
 }
 
 /* ----------------- resume.html ----------------- */
+.download-resume {
+  border: 1px solid var(--clr-light-dark-grey);
+  border-radius: 4px;
+  padding: 8px 20px;
+  margin-top: 4rem;
+}
+
+.resume-detail article {
+  padding-bottom: 2.5rem;
+}
+
+.resume-detail li {
+  padding-bottom: 0.75rem;
+}
 
 /* ----------------- about-me.html ----------------- */
