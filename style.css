@@ -14,6 +14,7 @@
   --size-small: 0.875rem;
   --size-base: 1rem;
   --size-large: 2rem;
+  --size-heading-3: 1.5rem;
   --size-heading-2: 3rem;
   --size-heading-1: 3.5rem;
 }
@@ -68,6 +69,14 @@ h1,
 h2,
 h3 {
   font-weight: normal;
+}
+
+h1 {
+  font-size: var(--size-heading-1);
+}
+
+h3 {
+  font-size: var(--size-heading-3);
 }
 
 .wrapper,
@@ -343,10 +352,15 @@ section h2+p {
 }
 
 /* flex 안에서는 width로 절대 크기를 정해도 제대로 적용되지 않을 수 있음 */
-.selected-projects article {
+.selected-projects a {
   /* min-width: 450px; */
   /* min-width: 494px; */
   flex-basis: 50%;
+}
+
+.selected-projects-items h3 {
+  font-size: var(--size-heading-3);
+  padding-bottom: 0.75rem;
 }
 
 @media (min-width: 600px) {
@@ -377,3 +391,22 @@ section h2+p {
     padding-left: 0;
   }
 } */
+
+/* ----------------- projects.html ----------------- */
+.projects h1~p {
+  padding-bottom: 6.25rem;
+}
+
+.projects-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  row-gap: 3.75rem;
+}
+
+/* ----------------- project-detail.html ----------------- */
+
+
+/* ----------------- resume.html ----------------- */
+
+/* ----------------- about-me.html ----------------- */
