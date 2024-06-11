@@ -364,33 +364,6 @@ section h2+article {
   padding-bottom: 0.75rem;
 }
 
-@media (min-width: 600px) {
-
-  .selected-projects section,
-  .project-stage-images {
-    flex-direction: row;
-  }
-
-  .project-stage-images img {
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 810px) {
-  .graduation-project {
-    flex-direction: row;
-  }
-
-  .graduation-project>* {
-    width: 50%;
-  }
-
-  .graduation-project div {
-    padding: 5rem 100px;
-    order: -1;
-  }
-}
-
 /* wide-wrapper max-width를 바꾸는 것으로 해결 */
 /* @media (min-width: 1100px) {
   .wide-wrapper {
@@ -497,6 +470,7 @@ section h2+article {
 }
 
 /* ----------------- resume.html ----------------- */
+/* Q: 마진 */
 .download-resume {
   border: 1px solid var(--clr-light-dark-grey);
   border-radius: 4px;
@@ -513,3 +487,66 @@ section h2+article {
 }
 
 /* ----------------- about-me.html ----------------- */
+.me-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.me-profile p {
+  padding-top: 2rem;
+}
+
+.inspirations {
+  padding-bottom: 0;
+}
+
+.inspirations article div,
+.looking-ahead article div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 1.25rem;
+}
+
+.inspirations div:last-child {
+  gap: 0.75rem;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.inspirations img {
+  overflow-x: auto;
+}
+
+/* ----------------- media query ----------------- */
+@media (min-width: 600px) {
+
+  .selected-projects section,
+  .project-stage-images {
+    flex-direction: row;
+  }
+
+  .project-stage-images img {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 810px) {
+
+  .graduation-project,
+  .me-profile,
+  .inspirations article div,
+  .looking-ahead article div {
+    flex-direction: row;
+  }
+
+  .graduation-project>* {
+    width: 50%;
+  }
+
+  .graduation-project div {
+    padding: 5rem 100px;
+    order: -1;
+  }
+}
