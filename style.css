@@ -470,12 +470,12 @@ section h2+article {
 }
 
 /* ----------------- resume.html ----------------- */
-/* Q: 마진 */
 .download-resume {
   border: 1px solid var(--clr-light-dark-grey);
   border-radius: 4px;
   padding: 8px 20px;
-  margin-top: 4rem;
+  display: inline-block;
+  margin-top: 2.5rem;
 }
 
 .resume-detail article {
