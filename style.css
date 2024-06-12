@@ -258,8 +258,7 @@ section h2 {
   line-height: 1;
 }
 
-section h2+p,
-section h2+article {
+section h2+p {
   color: #4C4D59;
   margin-top: 1.25rem;
   margin-bottom: 3.75rem;
@@ -444,25 +443,54 @@ section h2+article {
   margin-bottom: 2.5rem;
 }
 
-/* Q: 열 당 최대 2개, 50%씩 차지하고 싶게 할 때 */
-/* Q: 이미지 크기 일정하게 조정 */
 .project-stage-images img {
-  /* flex-basis: 466px; */
-  flex-basis: 48%;
+  /* flex-basis: 48%; */
   border-radius: 0.75rem;
-  object-fit: cover;
+  /* object-fit: cover; */
+  /* margin: 0 auto; */
 }
+
+.project-stage-images img:first-child,
+.project-stage-images img:nth-child(2) {
+  width: calc(50% - 0.75rem / 2);
+}
+
+/* has-one-child 대신 */
+.project-stage-images img:only-child {
+  width: 100%;
+}
+
+/* Q: 1012px에서 row로 변경되는 이유? */
+/* @media (max-width: 1012px) {
+  .project-stage-images {
+    flex-direction: column;
+  }
+
+  .project-stage-images img {
+    width: 100%;
+  }
+} */
 
 .other-projects {
   max-width: 700px;
   margin: 0 auto;
 }
 
+.other-projects h2 {
+  padding-bottom: 2rem;
+}
+
 .other-projects article {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 0.75rem;
-  align-content: center;
+  padding-bottom: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .other-projects article {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 0.75rem;
+  }
 }
 
 .other-projects p {
@@ -520,16 +548,14 @@ section h2+article {
 }
 
 /* ----------------- media query ----------------- */
+/* 대부분의 프로젝트는 모바일 퍼스트로 만들기 */
+/* css가 길수록 그냥 요소 바로 밑에 미디어 쿼리 넣는게 나음 */
 @media (min-width: 600px) {
 
-  .selected-projects section,
-  .project-stage-images {
+  .selected-projects section {
     flex-direction: row;
   }
 
-  .project-stage-images img {
-    margin: 0 auto;
-  }
 }
 
 @media (min-width: 810px) {
