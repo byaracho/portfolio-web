@@ -576,3 +576,66 @@ section h2+p {
     order: -1;
   }
 }
+
+/* ----------------- modal ----------------- */
+
+label {
+  display: block;
+  margin: 1.6rem 0;
+  font-size: var(--size-base);
+  font-weight: 500;
+}
+
+input,
+textarea {
+  border: 1px solid var(--clr-light-dark-grey);
+  width: 100%;
+}
+
+.submit {
+  width: auto;
+  padding: 8px 20px;
+  border-radius: 4px;
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-light-dark-grey);
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}

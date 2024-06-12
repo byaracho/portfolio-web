@@ -8,6 +8,7 @@
   <title>Callum Hayes</title>
 
   <link rel="stylesheet" href="./style.css">
+  <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
           <a href="/projects.html">Projects</a>
           <a href="/resume.html">Resume</a>
           <a href="/about-me.html">About me</a>
-          <a href="/" class="cta">Book a call</a>
+          <button class="cta">Book a call</button>
         </nav>
       </div>
     </div>
@@ -132,10 +133,29 @@
       <div class="wrapper">
         <h2>Interested in connecting?</h2>
         <p>Let's talk projects, collaborations, or anything design!</p>
-        <a href="/" class="cta">Book a call</a>
+        <button class="cta">Book a call</button>
       </div>
     </section>
   </main>
+
+  <div class="modal hidden">
+    <button class="close-modal">&times;</button>
+    <h2>Book a call.</h2>
+    <p>Give us some info for an efficient consultation.</p>
+    <form id="book-a-call" action="">
+      <label id="name-label" for="name-label">Name <input id="name" name="name-label" type="text"
+          placeholder="Enter your name" required /></label>
+      <label id="email-label" for="email-label">Email <input id="email" name="email-label" type="email"
+          placeholder="Enter your Email" required /></label>
+      <label id="phone-label" for="phone-label">Phone <input id="phone" name="phone-label" type="tel"
+          placeholder="Enter your phone number" required /></label>
+      <label for="comments">Any comments?
+        <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
+      </label>
+      <input class="submit" id="submit" type="submit" value="Submit" />
+    </form>
+  </div>
+  <div class="overlay hidden"></div>
 
   <footer>
     <div class="wide-wrapper">
