@@ -1,119 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callum Hayes</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Callum Hayes</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="script.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="./style.css">
-  <script defer src="script.js"></script>
-</head>
-
-<body>
-  <header>
-    <div class="wide-wrapper">
-      <div class="header main-nav">
-        <a href="/">Callum Hayes</a>
-        <nav>
-          <a href="/projects.html">Projects</a>
-          <a href="/resume.html">Resume</a>
-          <a href="/about-me.html">About me</a>
-          <button class="cta">Book a call</button>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="projects">
-      <div class="wrapper">
-        <h1>Selected projects</h1>
-        <p>Selected projects showcasing thoughtful design solutions<br> in education, fitness, and social
-          networking.</p>
-      </div>
-      <section class="wrapper projects-items">
-        <a href="/project-detail.html">
-          <article>
-            <img src="/public/project-1.png" alt="">
-            <h3>Redesign project: fitness tracker App Revamp</h3>
-            <p>Elevating the user experience of a renowned fitness tracker app through a strategic.</p>
-          </article>
-        </a>
-        <a href="/project-detail.html">
-          <article>
-            <img src="/public/project-2.png" alt="">
-            <h3>Internship project: social dining app design</h3>
-            <p>Designing a mobile app to connect food enthusiasts through shared dining experiences, from
-              concept
-              to prototype.</p>
-          </article>
-        </a>
-        <a href="/project-detail.html">
-          <article>
-            <img src="/public/project-3.png" alt="">
-            <h3>Redesign project: fitness tracker App Revamp</h3>
-            <p>Revolutionizing the educational ecosystem with a mobile app designed to enhance interactive
-              learning and peer collaboration.</p>
-          </article>
-        </a>
-      </section>
-    </section>
-
-
-    <section class="cta-section">
-      <div class="wrapper">
-        <h2>Interested in connecting?</h2>
-        <p>Let's talk projects, collaborations, or anything design!</p>
-        <button class="cta">Book a call</button>
-      </div>
-    </section>
-  </main>
-
-  <div class="modal hidden">
-    <button class="close-modal">&times;</button>
-    <h2>Book a call.</h2>
-    <p>Give us some info for an efficient consultation.</p>
-    <form id="book-a-call" action="">
-      <label id="name-label" for="name-label">Name <input id="name" name="name-label" type="text"
-          placeholder="Enter your name" required /></label>
-      <label id="email-label" for="email-label">Email <input id="email" name="email-label" type="email"
-          placeholder="Enter your Email" required /></label>
-      <label id="phone-label" for="phone-label">Phone <input id="phone" name="phone-label" type="tel"
-          placeholder="Enter your phone number" required /></label>
-      <label for="comments">Any comments?
-        <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
-      </label>
-      <input class="submit" id="submit" type="submit" value="Submit" />
-    </form>
-  </div>
-  <div class="overlay hidden"></div>
-
-  <footer>
-    <div class="wide-wrapper">
-      <div class="footer">
-        <div class="main-nav">
+  <body>
+    <header>
+      <div class="wide-wrapper">
+        <div class="header main-nav">
           <a href="/">Callum Hayes</a>
           <nav>
             <a href="/projects.html">Projects</a>
             <a href="/resume.html">Resume</a>
             <a href="/about-me.html">About me</a>
+            <button class="cta">Book a call</button>
           </nav>
         </div>
-        <div class="social-links">
-          <a href="/"><img src="/public/Dribble.svg" alt="."></a>
-          <a href="/"><img src="/public/Linkedin.svg" alt="."></a>
-          <a href="/"><img src="/public/Behance.svg" alt="."></a>
-          <a href="/"><img src="/public/X.svg" alt="."></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="projects">
+        <div class="wrapper">
+          <h1>Selected projects</h1>
+          <p>
+            Selected projects showcasing thoughtful design solutions<br />
+            in education, fitness, and social networking.
+          </p>
+        </div>
+        <section class="wrapper projects-items">
+          <a href="/project-detail.html">
+            <article>
+              <img src="/public/project-1.png" alt="" />
+              <h3>Redesign project: fitness tracker App Revamp</h3>
+              <p>
+                Elevating the user experience of a renowned fitness tracker app
+                through a strategic.
+              </p>
+            </article>
+          </a>
+          <a href="/project-detail.html">
+            <article>
+              <img src="/public/project-2.png" alt="" />
+              <h3>Internship project: social dining app design</h3>
+              <p>
+                Designing a mobile app to connect food enthusiasts through
+                shared dining experiences, from concept to prototype.
+              </p>
+            </article>
+          </a>
+          <a href="/project-detail.html">
+            <article>
+              <img src="/public/project-3.png" alt="" />
+              <h3>Redesign project: fitness tracker App Revamp</h3>
+              <p>
+                Revolutionizing the educational ecosystem with a mobile app
+                designed to enhance interactive learning and peer collaboration.
+              </p>
+            </article>
+          </a>
+        </section>
+      </section>
+
+      <section class="cta-section">
+        <div class="wrapper">
+          <h2>Interested in connecting?</h2>
+          <p>Let's talk projects, collaborations, or anything design!</p>
+          <button class="cta">Book a call</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h2>Book a call.</h2>
+      <p>Give us some info for an efficient consultation.</p>
+      <form id="book-a-call" action="">
+        <label id="name-label" for="name-label"
+          >Name
+          <input
+            id="name"
+            name="name-label"
+            type="text"
+            placeholder="Enter your name"
+            required
+        /></label>
+        <label id="email-label" for="email-label"
+          >Email
+          <input
+            id="email"
+            name="email-label"
+            type="email"
+            placeholder="Enter your Email"
+            required
+        /></label>
+        <label id="phone-label" for="phone-label"
+          >Phone
+          <input
+            id="phone"
+            name="phone-label"
+            type="tel"
+            placeholder="Enter your phone number"
+            required
+        /></label>
+        <label for="comments"
+          >Any comments?
+          <textarea
+            id="comments"
+            name="comments"
+            rows="5"
+            cols="30"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </label>
+        <input class="submit" id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <footer>
+      <div class="wide-wrapper">
+        <div class="footer">
+          <div class="main-nav">
+            <a href="/">Callum Hayes</a>
+            <nav>
+              <a href="/projects.html">Projects</a>
+              <a href="/resume.html">Resume</a>
+              <a href="/about-me.html">About me</a>
+            </nav>
+          </div>
+          <div class="social-links">
+            <a href="/"><img src="/public/Dribble.svg" alt="." /></a>
+            <a href="/"><img src="/public/Linkedin.svg" alt="." /></a>
+            <a href="/"><img src="/public/Behance.svg" alt="." /></a>
+            <a href="/"><img src="/public/X.svg" alt="." /></a>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright">
+          <p>Copyright 2024 by Callum Hayes</p>
         </div>
       </div>
-      <hr>
-      <div class="copyright">
-        <p>Copyright 2024 by Callum Hayes</p>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

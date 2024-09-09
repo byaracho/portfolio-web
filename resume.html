@@ -1,167 +1,247 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callum Hayes</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Callum Hayes</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="script.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="./style.css">
-  <script defer src="script.js"></script>
-</head>
-
-<body>
-  <header>
-    <div class="wide-wrapper">
-      <div class="header main-nav">
-        <a href="/">Callum Hayes</a>
-        <nav>
-          <a href="/projects.html">Projects</a>
-          <a href="/resume.html">Resume</a>
-          <a href="/about-me.html">About me</a>
-          <button class="cta">Book a call</button>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="wrapper">
-        <h1>Graduation Behind. Dedication Ahead.</h1>
-        <p>Designing a mobile app to connect food enthusiasts through shared dining experiences, from concept to
-          prototypFresh out of university with a zeal for UX/UI design, I'm keen to use my skills to craft engaging
-          mobile app interfaces. I seek a role that challenges me and lets me contribute to exciting projects, nurturing
-          my growth in design.e.</p>
-        <a href="/" class="download-resume">Download Resume as PDF</a>
-      </div>
-    </section>
-
-    <section class="resume-detail">
-      <div class="wrapper">
-        <article>
-          <h3>Education</h3>
-          <ul>
-            <li>B.A. in Graphic Design, College of Art and Design, UK, 2019-2023</li>
-            <li>Graduated with Honors, GPA: 3.8/4.0</li>
-            <li>Capstone Project: "Collaborative Learning App Design" — Designed a mobile app to revolutionize
-              educational ecosystems, enhancing interactive learning and peer collaboration through user research,
-              ideation, and iterative design to create a user-friendly interface for mobile platforms.</li>
-            <li>Relevant Coursework: Interactive Design, User Experience Principles, Digital Illustration</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Experience</h3>
-          <p>UX/UI Design Intern, Innovatech Designs, London, UK, June 2023 — December 2023</p>
-          <ul>
-            <li>Integral to the design team for the Social Dining App Design project, aimed at enhancing dining
-              experiences through social connectivity.</li>
-            <li>Led the initiative on user research and usability testing, providing critical insights that shaped the
-              app’s design direction.</li>
-            <li>Developed interactive prototypes with Figma and supported the implementation of engaging animations with
-              Framer Motion, ensuring a dynamic user experience.</li>
-            <li>Engaged in weekly design critiques, both giving and receiving feedback, to iteratively refine and
-              improve the app’s UX/UI design.</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Skills</h3>
-          <ul>
-            <li>Proficient in Figma, Adobe Creative Suite, and Framer.</li>
-            <li>Strong understanding of user-centered design principles.</li>
-            <li>Ability to conduct comprehensive user research and usability testing.</li>
-            <li>Excellent problem-solving skills and attention to detail.</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Projects</h3>
-          <ul>
-            <li>Graduation Project: Collaborative Learning App DesignDesigned a mobile app to revolutionize educational
-              ecosystems, enhancing interactive learning and peer collaboration. Focused on user research, ideation, and
-              iterative design to create a user-friendly interface for mobile platforms.</li>
-            <li>Redesign Project: Fitness Tracker App RevampLed a UX/UI overhaul for a popular fitness tracker app,
-              aimed at boosting user engagement and clarity. Conducted usability audits, developed a redesign strategy,
-              and implemented user feedback to significantly improve the app's interface and functionality.</li>
-            <li>Internship Project: Social Dining App DesignCreated a mobile app design that connects food enthusiasts
-              through shared dining experiences. Managed market research, conceptual design, and prototyping,
-              culminating in a user-tested and refined app interface that promotes social connectivity and culinary
-              exploration.</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Personal Qualities</h3>
-          <ul>
-            <li>Creative and innovative thinker with a keen eye for aesthetics.</li>
-            <li>Strong communicator, capable of effectively articulating design concepts.</li>
-            <li>Collaborative team player with a positive attitude.</li>
-            <li>Passionate about staying current with technology and design trends.</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Interests</h3>
-          <ul>
-            <li>Photography, particularly urban and nature landscapes.</li>
-            <li>Staying abreast of the latest trends in technology and design.</li>
-            <li>Reading, especially science fiction and design literature.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-
-    <section class="cta-section">
-      <div class="wrapper">
-        <h2>Interested in connecting?</h2>
-        <p>Let's talk projects, collaborations, or anything design!</p>
-        <button class="cta">Book a call</button>
-      </div>
-    </section>
-  </main>
-
-  <div class="modal hidden">
-    <button class="close-modal">&times;</button>
-    <h2>Book a call.</h2>
-    <p>Give us some info for an efficient consultation.</p>
-    <form id="book-a-call" action="">
-      <label id="name-label" for="name-label">Name <input id="name" name="name-label" type="text"
-          placeholder="Enter your name" required /></label>
-      <label id="email-label" for="email-label">Email <input id="email" name="email-label" type="email"
-          placeholder="Enter your Email" required /></label>
-      <label id="phone-label" for="phone-label">Phone <input id="phone" name="phone-label" type="tel"
-          placeholder="Enter your phone number" required /></label>
-      <label for="comments">Any comments?
-        <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
-      </label>
-      <input class="submit" id="submit" type="submit" value="Submit" />
-    </form>
-  </div>
-  <div class="overlay hidden"></div>
-
-  <footer>
-    <div class="wide-wrapper">
-      <div class="footer">
-        <div class="main-nav">
+  <body>
+    <header>
+      <div class="wide-wrapper">
+        <div class="header main-nav">
           <a href="/">Callum Hayes</a>
           <nav>
             <a href="/projects.html">Projects</a>
             <a href="/resume.html">Resume</a>
             <a href="/about-me.html">About me</a>
+            <button class="cta">Book a call</button>
           </nav>
         </div>
-        <div class="social-links">
-          <a href="/"><img src="/public/Dribble.svg" alt="."></a>
-          <a href="/"><img src="/public/Linkedin.svg" alt="."></a>
-          <a href="/"><img src="/public/Behance.svg" alt="."></a>
-          <a href="/"><img src="/public/X.svg" alt="."></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrapper">
+          <h1>Graduation Behind. Dedication Ahead.</h1>
+          <p>
+            Designing a mobile app to connect food enthusiasts through shared
+            dining experiences, from concept to prototypFresh out of university
+            with a zeal for UX/UI design, I'm keen to use my skills to craft
+            engaging mobile app interfaces. I seek a role that challenges me and
+            lets me contribute to exciting projects, nurturing my growth in
+            design.e.
+          </p>
+          <a href="/" class="download-resume">Download Resume as PDF</a>
+        </div>
+      </section>
+
+      <section class="resume-detail">
+        <div class="wrapper">
+          <article>
+            <h3>Education</h3>
+            <ul>
+              <li>
+                B.A. in Graphic Design, College of Art and Design, UK, 2019-2023
+              </li>
+              <li>Graduated with Honors, GPA: 3.8/4.0</li>
+              <li>
+                Capstone Project: "Collaborative Learning App Design" — Designed
+                a mobile app to revolutionize educational ecosystems, enhancing
+                interactive learning and peer collaboration through user
+                research, ideation, and iterative design to create a
+                user-friendly interface for mobile platforms.
+              </li>
+              <li>
+                Relevant Coursework: Interactive Design, User Experience
+                Principles, Digital Illustration
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h3>Experience</h3>
+            <p>
+              UX/UI Design Intern, Innovatech Designs, London, UK, June 2023 —
+              December 2023
+            </p>
+            <ul>
+              <li>
+                Integral to the design team for the Social Dining App Design
+                project, aimed at enhancing dining experiences through social
+                connectivity.
+              </li>
+              <li>
+                Led the initiative on user research and usability testing,
+                providing critical insights that shaped the app’s design
+                direction.
+              </li>
+              <li>
+                Developed interactive prototypes with Figma and supported the
+                implementation of engaging animations with Framer Motion,
+                ensuring a dynamic user experience.
+              </li>
+              <li>
+                Engaged in weekly design critiques, both giving and receiving
+                feedback, to iteratively refine and improve the app’s UX/UI
+                design.
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h3>Skills</h3>
+            <ul>
+              <li>Proficient in Figma, Adobe Creative Suite, and Framer.</li>
+              <li>Strong understanding of user-centered design principles.</li>
+              <li>
+                Ability to conduct comprehensive user research and usability
+                testing.
+              </li>
+              <li>Excellent problem-solving skills and attention to detail.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Projects</h3>
+            <ul>
+              <li>
+                Graduation Project: Collaborative Learning App DesignDesigned a
+                mobile app to revolutionize educational ecosystems, enhancing
+                interactive learning and peer collaboration. Focused on user
+                research, ideation, and iterative design to create a
+                user-friendly interface for mobile platforms.
+              </li>
+              <li>
+                Redesign Project: Fitness Tracker App RevampLed a UX/UI overhaul
+                for a popular fitness tracker app, aimed at boosting user
+                engagement and clarity. Conducted usability audits, developed a
+                redesign strategy, and implemented user feedback to
+                significantly improve the app's interface and functionality.
+              </li>
+              <li>
+                Internship Project: Social Dining App DesignCreated a mobile app
+                design that connects food enthusiasts through shared dining
+                experiences. Managed market research, conceptual design, and
+                prototyping, culminating in a user-tested and refined app
+                interface that promotes social connectivity and culinary
+                exploration.
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h3>Personal Qualities</h3>
+            <ul>
+              <li>
+                Creative and innovative thinker with a keen eye for aesthetics.
+              </li>
+              <li>
+                Strong communicator, capable of effectively articulating design
+                concepts.
+              </li>
+              <li>Collaborative team player with a positive attitude.</li>
+              <li>
+                Passionate about staying current with technology and design
+                trends.
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h3>Interests</h3>
+            <ul>
+              <li>Photography, particularly urban and nature landscapes.</li>
+              <li>
+                Staying abreast of the latest trends in technology and design.
+              </li>
+              <li>
+                Reading, especially science fiction and design literature.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="wrapper">
+          <h2>Interested in connecting?</h2>
+          <p>Let's talk projects, collaborations, or anything design!</p>
+          <button class="cta">Book a call</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h2>Book a call.</h2>
+      <p>Give us some info for an efficient consultation.</p>
+      <form id="book-a-call" action="">
+        <label id="name-label" for="name-label"
+          >Name
+          <input
+            id="name"
+            name="name-label"
+            type="text"
+            placeholder="Enter your name"
+            required
+        /></label>
+        <label id="email-label" for="email-label"
+          >Email
+          <input
+            id="email"
+            name="email-label"
+            type="email"
+            placeholder="Enter your Email"
+            required
+        /></label>
+        <label id="phone-label" for="phone-label"
+          >Phone
+          <input
+            id="phone"
+            name="phone-label"
+            type="tel"
+            placeholder="Enter your phone number"
+            required
+        /></label>
+        <label for="comments"
+          >Any comments?
+          <textarea
+            id="comments"
+            name="comments"
+            rows="5"
+            cols="30"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </label>
+        <input class="submit" id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <footer>
+      <div class="wide-wrapper">
+        <div class="footer">
+          <div class="main-nav">
+            <a href="/">Callum Hayes</a>
+            <nav>
+              <a href="/projects.html">Projects</a>
+              <a href="/resume.html">Resume</a>
+              <a href="/about-me.html">About me</a>
+            </nav>
+          </div>
+          <div class="social-links">
+            <a href="/"><img src="/public/Dribble.svg" alt="." /></a>
+            <a href="/"><img src="/public/Linkedin.svg" alt="." /></a>
+            <a href="/"><img src="/public/Behance.svg" alt="." /></a>
+            <a href="/"><img src="/public/X.svg" alt="." /></a>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright">
+          <p>Copyright 2024 by Callum Hayes</p>
         </div>
       </div>
-      <hr>
-      <div class="copyright">
-        <p>Copyright 2024 by Callum Hayes</p>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
